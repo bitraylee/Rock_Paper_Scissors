@@ -1,44 +1,126 @@
 <html lang="en">
+   <head>
+      <!-- ****** faviconit.com favicons ****** -->
+      <link rel="shortcut icon" href="faviconit/favicon.ico" />
+      <link rel="icon" sizes="16x16 32x32 64x64" href="faviconit/favicon.ico" />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="196x196"
+         href="faviconit/favicon-192.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="160x160"
+         href="faviconit/favicon-160.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="96x96"
+         href="faviconit/favicon-96.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="64x64"
+         href="faviconit/favicon-64.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="faviconit/favicon-32.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="faviconit/favicon-16.png"
+      />
+      <link rel="apple-touch-icon" href="faviconit/favicon-57.png" />
+      <link
+         rel="apple-touch-icon"
+         sizes="114x114"
+         href="faviconit/favicon-114.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="72x72"
+         href="faviconit/favicon-72.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="144x144"
+         href="faviconit/favicon-144.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="60x60"
+         href="faviconit/favicon-60.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="120x120"
+         href="faviconit/favicon-120.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="76x76"
+         href="faviconit/favicon-76.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="152x152"
+         href="faviconit/favicon-152.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="faviconit/favicon-180.png"
+      />
+      <meta name="msapplication-TileColor" content="#FFFFFF" />
+      <meta
+         name="msapplication-TileImage"
+         content="faviconit/favicon-144.png"
+      />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
+      <!-- ****** faviconit.com favicons ****** -->
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/overlay.css">
-   <script src="scripts/rps.js"></script>
-   <script src="scripts/move-elements.js"></script>
-   <script src="scripts/overlay.js"></script>
-   <title>Rock Paper Scissors</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/overlay.css" />
+      <script src="scripts/rps.js"></script>
+      <script src="scripts/move-elements.js"></script>
+      <script src="scripts/overlay.js"></script>
+      <title>Rock Paper Scissors</title>
+   </head>
 
-</head>
-
-<body>
-   <div id="overlay-container">
-
-   </div>
-   <section class="main-container">
-      <section id="computer">
-         <div id="comp-container" class="card-container">
-            <div class="card rock"></div>
-            <div class="card paper"></div>
-            <div class="card scissors"></div>
-         </div>
+   <body>
+      <div id="overlay-container"></div>
+      <section class="main-container">
+         <section id="computer">
+            <div id="comp-container" class="card-container">
+               <div class="card rock"></div>
+               <div class="card paper"></div>
+               <div class="card scissors"></div>
+            </div>
+         </section>
+         <section id="user">
+            <div id="user-container" class="card-container">
+               <div class="card rock" onclick="move(0)">
+                  <p>ROCK</p>
+               </div>
+               <div class="card paper" onclick="move(1)">
+                  <p>PAPER</p>
+               </div>
+               <div class="card scissors" onclick="move(2)">
+                  <p>SCISSORS</p>
+               </div>
+            </div>
+         </section>
       </section>
-      <section id="user">
-         <div id="user-container" class="card-container">
-            <div class="card rock" onclick="move(0)">
-               <p>ROCK</p>
-            </div>
-            <div class="card paper" onclick="move(1)">
-               <p>PAPER</p>
-            </div>
-            <div class="card scissors" onclick="move(2)">
-               <p>SCISSORS</p>
-            </div>
-         </div>
-      </section>
-   </section>
-
-</body>
-
+   </body>
 </html>
